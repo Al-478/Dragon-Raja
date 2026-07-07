@@ -1,0 +1,28 @@
+<svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="520" fill="#111318"/>
+  <circle cx="260" cy="260" r="232" fill="#f3ead7" stroke="#1a1718" stroke-width="14"/>
+  <circle cx="260" cy="260" r="204" stroke="#7b6543" stroke-width="5"/>
+  <circle cx="260" cy="260" r="178" stroke="#1a1718" stroke-width="3"/>
+  <path d="M260 382V210" stroke="#1a1718" stroke-width="22" stroke-linecap="round"/>
+  <path d="M260 230C226 188 196 164 154 150" stroke="#1a1718" stroke-width="18" stroke-linecap="round"/>
+  <path d="M260 230C294 188 324 164 366 150" stroke="#1a1718" stroke-width="18" stroke-linecap="round"/>
+  <path d="M252 270C216 244 178 236 134 245" stroke="#1a1718" stroke-width="15" stroke-linecap="round"/>
+  <path d="M268 270C304 244 342 236 386 245" stroke="#1a1718" stroke-width="15" stroke-linecap="round"/>
+  <path d="M260 202C246 168 244 132 258 102" stroke="#1a1718" stroke-width="13" stroke-linecap="round"/>
+  <path d="M258 202C286 176 314 154 350 136" stroke="#1a1718" stroke-width="12" stroke-linecap="round"/>
+  <path d="M262 202C234 176 206 154 170 136" stroke="#1a1718" stroke-width="12" stroke-linecap="round"/>
+  <path d="M260 382C226 392 196 410 172 438" stroke="#1a1718" stroke-width="15" stroke-linecap="round"/>
+  <path d="M260 382C294 392 324 410 348 438" stroke="#1a1718" stroke-width="15" stroke-linecap="round"/>
+  <path d="M260 380C250 414 250 438 260 458" stroke="#1a1718" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="154" cy="150" r="18" fill="#1a1718"/>
+  <circle cx="366" cy="150" r="18" fill="#1a1718"/>
+  <circle cx="134" cy="245" r="15" fill="#1a1718"/>
+  <circle cx="386" cy="245" r="15" fill="#1a1718"/>
+  <circle cx="258" cy="102" r="14" fill="#1a1718"/>
+  <circle cx="170" cy="136" r="12" fill="#1a1718"/>
+  <circle cx="350" cy="136" r="12" fill="#1a1718"/>
+  <path d="M116 353C148 383 194 400 260 400C326 400 372 383 404 353" stroke="#7b6543" stroke-width="8" stroke-linecap="round"/>
+  <path d="M117 168C143 110 198 76 260 76C322 76 377 110 403 168" stroke="#7b6543" stroke-width="8" stroke-linecap="round"/>
+  <text x="260" y="54" text-anchor="middle" fill="#1a1718" font-family="Georgia, serif" font-size="18" font-weight="700" letter-spacing="3">WORLD TREE ARCHIVE</text>
+  <text x="260" y="488" text-anchor="middle" fill="#1a1718" font-family="Georgia, serif" font-size="24" font-weight="700" letter-spacing="4">CASSELL COLLEGE</text>
+</svg>

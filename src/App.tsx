@@ -68,6 +68,7 @@ const navItems: Array<{ zh: string; en: string; id: string }> = [
   { zh: "血统评估", en: "Assessment", id: "assessment" },
   { zh: "诺玛终端", en: "Norma", id: "terminal" },
   { zh: "密函", en: "Letter", id: "notice" },
+  { zh: "调令", en: "Order", id: "mission" },
 ];
 
 const siteCopy = {
@@ -419,6 +420,7 @@ const sealedLetterEnSrc = `${import.meta.env.BASE_URL}notice/sealed-letter-en-cl
 const sealedLetterZhSrc = `${import.meta.env.BASE_URL}notice/sealed-letter-zh-clean.png`;
 const admissionThemeSrc = `${import.meta.env.BASE_URL}audio/admission-theme.mp3`;
 const swordManifestSrc = `${import.meta.env.BASE_URL}materials/processed/sword-oath.jpg`;
+const evaTyphoonSrc = `${import.meta.env.BASE_URL}materials/generated/eva-bavi-typhoon.jpg`;
 let admissionThemeAudio: HTMLAudioElement | null = null;
 
 const doctrineItems = [
@@ -1648,6 +1650,12 @@ function App() {
             </div>
           )}
         </section>
+
+        {result && (
+          <section id="mission" className="section-shell mission-order-section">
+            <EvaMissionOrder />
+          </section>
+        )}
           </>
         )}
       </main>
@@ -1717,6 +1725,87 @@ function AdmissionNotice({ language }: { language: NoticeLanguage }) {
       </div>
 
     </article>
+  );
+}
+
+function EvaMissionOrder() {
+  return (
+    <>
+      <div className="mission-route-bridge">
+        <span>录取链路已升级 · 执行部加密频道接入</span>
+      </div>
+
+      <div className="mission-order-heading">
+        <div>
+          <span>EVA / MESSAGE</span>
+          <h2>卡塞尔学院执行部</h2>
+        </div>
+        <p>任务代号：巴威｜保密等级：SS</p>
+      </div>
+
+      <article className="eva-order-board">
+        <div className="eva-order-status">
+          <div>
+            <span>任务代号</span>
+            <strong>巴威</strong>
+          </div>
+          <div className="danger">
+            <span>保密等级</span>
+            <strong>SS</strong>
+          </div>
+          <div>
+            <span>发件人</span>
+            <strong>EVA</strong>
+          </div>
+          <div>
+            <span>收件人</span>
+            <strong className="mission-recipient-blank" aria-label="收件人留白" />
+          </div>
+        </div>
+
+        <div className="eva-order-main">
+          <div className="eva-order-message">
+            <div className="eva-sender">
+              <div className="eva-avatar">EVA</div>
+              <div>
+                <span>信息 · SMS / 15:49</span>
+                <strong>卡塞尔学院执行部</strong>
+              </div>
+            </div>
+
+            <span className="eva-security-label">保密等级：SS</span>
+            <p>您好，我是EVA，我现在以卡塞尔学院执行部的名义向你发布令。</p>
+            <h3>很遗憾的通知您，您的假期要提前结束了。</h3>
+            <p>9号台风巴威异常失控，风眼无规则偏移、近海磁场紊乱，气象设备全部失灵。学院判定台风内核蕴藏天空与风之王权能，存在苏醒风险。</p>
+            <p>您的血统评级为S，根据《执行部专员行动守则》第二十三条规定、现紧急派遣您为此次行动的执行专员，行动文件代号：SS 20260708</p>
+            <p>另外，专员楚子航、凯撒·加图索，以及路明非作为协助专员被编入此次行动，由您全程指挥。</p>
+            <p>收到通知后请即刻启程，前往南海调查。本次行动命令由校董会直接下发，校长希尔伯特·让·昂热带领装备部以及校工部全程负责此次行动后勤支援。</p>
+            <p>祝你好运。</p>
+            <div className="eva-signature">—你亲爱的EVA</div>
+          </div>
+
+          <div className="eva-storm-panel">
+            <img src={evaTyphoonSrc} alt="西北太平洋台风巴威监测图" />
+            <div className="eva-storm-caption">
+              <span>NW PACIFIC OCEAN</span>
+              <strong>ANOMALY MONITORING</strong>
+              <span>MAGNETIC FIELD / UNSTABLE</span>
+            </div>
+            <div className="eva-anomaly-ring" aria-hidden="true" />
+            <div className="eva-storm-data">
+              <span>WIND SCALE</span><strong>MAX 17</strong>
+              <span>EYE OFFSET</span><strong>IRREGULAR</strong>
+              <span>RISK</span><strong>AWAKENING</strong>
+            </div>
+          </div>
+        </div>
+
+        <div className="eva-candidate-reply">
+          <span>回复</span>
+          <p>Eva，通知楚子航、路明非和凯撒，告诉他们退后，现在由我来接管战场，把七宗罪投放到海南，我会将龙王钉死在这里</p>
+        </div>
+      </article>
+    </>
   );
 }
 

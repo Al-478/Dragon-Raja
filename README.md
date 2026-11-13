@@ -4,7 +4,7 @@
 
 [在线体验](https://dragon-raja.vercel.app/) · [项目仓库](https://github.com/Al-478/Dragon-Raja)
 
-![卡塞尔学院主题场景](public/hero-sealed-campus-generated.png)
+![卡塞尔学院秘密招生档案首页](docs/screenshots/admissions.png)
 
 ## 项目特色
 
@@ -17,6 +17,26 @@
 - **双语内容与响应式布局**：支持主要站点内容中英文切换，并适配不同屏幕尺寸。
 
 本项目为主题交互原型，所有测试结果、档案编号和招生流程均为模拟内容，不构成真实招生入口。评估在浏览器中计算；当前代码未接入后端服务或数据库，刷新页面后测试进度会重置。下载的密函为仓库内预制图片，文件名使用评估生成的录取编号。
+
+## 页面预览
+
+### 诺玛血统评估
+
+通过情境问答完成入学测试，获取候选人评级与任务适配建议。
+
+![诺玛血统评估与入学测试页面](docs/screenshots/assessment.png)
+
+### 中文录取密函
+
+完成评估后可查看中英文密函，并下载图片或打印留存。
+
+![卡塞尔学院中文录取密函](docs/screenshots/admission-letter-zh.png)
+
+### 执行部调令
+
+EVA 发布“巴威”任务，呈现任务信息与台风监测画面。
+
+![卡塞尔学院执行部巴威任务调令](docs/screenshots/mission-order.png)
 
 ## 技术栈
 
@@ -59,6 +79,7 @@ npm run preview
 
 ```text
 Dragon-Raja/
+├── docs/screenshots/       # README 页面截图
 ├── public/                 # 图片、音频、密函及其他静态素材
 │   ├── audio/              # 主题音频
 │   ├── materials/          # 校园、人物、言灵等视觉素材
